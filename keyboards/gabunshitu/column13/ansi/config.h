@@ -17,14 +17,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
+//#include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xAB01
-#define PRODUCT_ID   0xC130
-#define DEVICE_VER   0x0001
-#define MANUFACTURER ABplus
-#define PRODUCT      Column13-ansi
+//#define VENDOR_ID    0xAB01
+//#define PRODUCT_ID   0xC130
+//#define DEVICE_VER   0x0001
+//#define MANUFACTURER kazhida
+//#define PRODUCT      Column13
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -62,8 +62,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define BACKLIGHT_LEVELS 3
 //#define BACKLIGHT_BREATHING
 
-#define RGB_DI_PIN D3
-#ifdef RGB_DI_PIN
+#define WS2812_DI_PIN D3
+#ifdef WS2812_DI_PIN
 #    define RGBLED_NUM 48
 #    define RGBLIGHT_HUE_STEP 8
 #    define RGBLIGHT_SAT_STEP 8
