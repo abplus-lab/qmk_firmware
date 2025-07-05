@@ -26,6 +26,7 @@
  * The second converts the arguments into a two-dimensional array which
  * represents the switch matrix.
  */
+/*
 #define xxxx KC_NO
 #define LAYOUT( \
     k101, k102, k103, k104, k105, k106, k107, k108, k109, k110, k111, k112, k113,   \
@@ -38,4 +39,4 @@
     { k107, k108, k109, k110, k111, k112, k113,  KC_NO, k207, k208, k209, k210, k211, k212,  KC_NO, KC_NO }, \
     { k307, k308, k309, k310, k311, k312, KC_NO, KC_NO, k406, k407, k408, k409, k410, k411,  KC_NO, KC_NO }  \
 }
-
+*/
