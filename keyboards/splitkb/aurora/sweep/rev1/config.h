@@ -16,7 +16,7 @@
 
 #pragma once
 
-// Not yet available in `info.json`
+// Not yet available in `keyboard.json`
 #ifdef OLED_ENABLE
 #    define OLED_DISPLAY_128X32
 #    define SPLIT_OLED_ENABLE

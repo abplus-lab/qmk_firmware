@@ -26,6 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MANUFACTURER kazhida
 //#define PRODUCT      Column13
 
+#define LMANUFACTURER  ((wchar_t)"kazhida")
+
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 16
@@ -40,9 +42,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-//#define MATRIX_ROW_PINS { D0, D5 }
-//#define MATRIX_COL_PINS { F1, F0, B0 }
-#define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -52,19 +51,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
 
-//#define LED_NUM_LOCK_PIN D3
-//#define LED_CAPS_LOCK_PIN B1
-//#define LED_SCROLL_LOCK_PIN B2
-//#define LED_COMPOSE_PIN B3
-//#define LED_KANA_PIN B4
-
-//#define BACKLIGHT_PIN B7
-//#define BACKLIGHT_LEVELS 3
-//#define BACKLIGHT_BREATHING
-
 #define WS2812_DI_PIN D3
 #ifdef WS2812_DI_PIN
-#    define RGBLED_NUM 48
+#    define RGBLIGHT_LED_COUNT 48
 #    define RGBLIGHT_HUE_STEP 8
 #    define RGBLIGHT_SAT_STEP 8
 #    define RGBLIGHT_VAL_STEP 8
@@ -143,10 +132,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
 
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
-
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
 //#define BOOTMAGIC_LITE_COLUMN 0
@@ -155,4 +140,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_I2C 1
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 250
+#define TAPPING_TERM 300

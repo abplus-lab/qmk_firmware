@@ -19,7 +19,7 @@
 void keyboard_post_init_kb(void)
 {
     // Led pins:
-    // C12 is the left-most led, normally Num Lock, but on Spacesaver M it's Caps Lock. Configured in info.json
+    // C12 is the left-most led, normally Num Lock, but on Spacesaver M it's Caps Lock. Configured in keyboard.json
     gpio_set_pin_output(C11); // middle led, always off on Spacesaver M
     gpio_write_pin(C11, 0);
     gpio_set_pin_output(C10); // right-most led, normally Scroll Lock, but on Spacesaver M indicates function layer
