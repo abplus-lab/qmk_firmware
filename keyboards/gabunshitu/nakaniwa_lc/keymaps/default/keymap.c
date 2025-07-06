@@ -22,8 +22,8 @@ enum layer_number {
     _FUNKS
 };
 
-#define KL_EISU LT(_LOWER, KC_LANG2)
-#define KL_KANA LT(_RAISE, KC_LANG1)
+#define KL_EISU LT(_LOWER, KC_LNG2)
+#define KL_KANA LT(_RAISE, KC_LNG1)
 
 #define cmd(kc) LGUI(kc)
 //#define cmd(kc) LCTL(kc)
@@ -38,11 +38,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,     KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,               KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC,KC_RBRC,KC_BSPC,
     KC_LCTL,    KC_A,   KC_S,   KC_D,   KC_F,   KC_G,               KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,KC_ENT,
     KC_LSFT,    KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,       KC_F3,  KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSFT,KC_UP,  KC_DEL,
-    KC_LCTRL,   KC_LALT,KC_LGUI,KC_SPC,KL_EISU,                     KL_KANA,KC_SPC, KC_SPC, KC_SPC,         KC_RSFT,KC_LEFT,KC_DOWN,KC_RIGHT
+    KC_LCTL,    KC_LALT,KC_LGUI,KC_SPC,KL_EISU,                     KL_KANA,KC_SPC, KC_SPC, KC_SPC,         KC_RSFT,KC_LEFT,KC_DOWN,KC_RIGHT
 ),
 [_LOWER] = LAYOUT(
     KC_GRV, KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      _______,    KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,     KC_F12, _______,_______,
-    _______,cmd(KC_Q),  cmd(KC_W),  cmd(KC_E),  cmd(KC_R),  cmd(KC_T),              cmd(KC_Y),  cmd(KC_U),  KC_PSCR,    KC_SLCK,    KC_PAUS,    _______,    _______,cmd(KC_BSPC),
+    _______,cmd(KC_Q),  cmd(KC_W),  cmd(KC_E),  cmd(KC_R),  cmd(KC_T),              cmd(KC_Y),  cmd(KC_U),  KC_PSCR,    _______,    KC_PAUS,   _______,    _______,cmd(KC_BSPC),
     _______,cmd(KC_A),  cmd(KC_S),  cmd(KC_D),  cmd(KC_F),  cmd(KC_G),              cmd(KC_H),  KC_INS,     KC_HOME,    KC_PGUP,    _______,    _______,    cmd(KC_ENT),
     _______,cmd(KC_Z),  cmd(KC_X),  cmd(KC_C),  cmd(KC_V),  cmd(KC_B),     _______, cmd(KC_N),  KC_DEL,     KC_END,     KC_PGDN,    cmd(KC_SLSH),_______,   KC_PGUP,_______,
     _______,_______,_______,_______,_______,                                        _______,    _______,    _______,    _______,    _______,    KC_HOME,KC_PGDN, KC_END
