@@ -20,15 +20,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xAB01
-#define PRODUCT_ID   0xC131
-#define DEVICE_VER   0x0001
-#define MANUFACTURER ABplus
-#define PRODUCT      Column13-ansi2
+//#define VENDOR_ID    0xAB01
+//#define PRODUCT_ID   0xC131
+//#define DEVICE_VER   0x0001
+//#define MANUFACTURER ABplus
+//#define PRODUCT      Column13-ansi2
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 16
+//#define MATRIX_ROWS 4
+//#define MATRIX_COLS 16
 
 /*
  * Keyboard Matrix Assignments
@@ -42,10 +42,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 //#define MATRIX_ROW_PINS { D0, D5 }
 //#define MATRIX_COL_PINS { F1, F0, B0 }
-#define UNUSED_PINS
+//#define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+//#define DIODE_DIRECTION COL2ROW
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
